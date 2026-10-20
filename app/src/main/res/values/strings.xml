@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DermaTrace</string>
+    <string name="navigation_open">Open navigation drawer</string>
+    <string name="navigation_close">Close navigation drawer</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_new_analysis">New analysis</string>
+    <string name="nav_patients">Patients &amp; lesions</string>
+    <string name="nav_history">History</string>
+    <string name="nav_nearby">Nearby care</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About / safety</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_compare">Compare scans</string>
+    <string name="nav_followups">Follow-ups</string>
+</resources>

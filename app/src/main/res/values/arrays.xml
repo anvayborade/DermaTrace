@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="body_locations">
+        <item>Scalp</item><item>Face</item><item>Neck</item><item>Chest</item><item>Back</item>
+        <item>Abdomen</item><item>Upper arm</item><item>Forearm</item><item>Hand</item><item>Thigh</item>
+        <item>Lower leg</item><item>Foot</item><item>Other / not specified</item>
+    </string-array>
+    <string-array name="sex_options">
+        <item>Not specified</item><item>Female</item><item>Male</item><item>Other</item>
+    </string-array>
+</resources>

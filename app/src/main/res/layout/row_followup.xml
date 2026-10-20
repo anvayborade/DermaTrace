@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="4dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80dp" android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp" android:background="@drawable/bg_glass_row">
+        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_notifications" app:tint="@color/dt_primary" android:contentDescription="Follow-up" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+            <TextView android:id="@+id/rowFollowupTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="15sp" />
+            <TextView android:id="@+id/rowFollowupMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/dt_text_muted" android:textSize="12sp" />
+        </LinearLayout>
+        <TextView android:layout_width="22dp" android:layout_height="wrap_content" android:text="›" android:textColor="@color/dt_text_muted" android:textSize="24sp" android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

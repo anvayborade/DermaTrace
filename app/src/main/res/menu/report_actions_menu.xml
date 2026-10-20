@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/report_open" android:title="Open report" />
+    <item android:id="@+id/report_save_txt" android:title="Save TXT" />
+    <item android:id="@+id/report_share_txt" android:title="Share TXT" />
+    <item android:id="@+id/report_save_pdf" android:title="Save PDF" />
+    <item android:id="@+id/report_share_pdf" android:title="Share PDF" />
+    <item android:id="@+id/report_view_assessment" android:title="View assessment" />
+</menu>

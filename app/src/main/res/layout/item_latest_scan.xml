@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="146dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:orientation="vertical" android:background="@drawable/bg_glass_row" android:padding="8dp" android:clickable="true" android:focusable="true">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgLatestScan" android:layout_width="match_parent" android:layout_height="78dp" android:scaleType="centerCrop" android:background="@drawable/bg_image_rounded" android:clipToOutline="true" android:outlineProvider="background" android:contentDescription="Latest lesion scan"/>
+    <TextView android:id="@+id/txtLatestTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="12sp" android:maxLines="1" android:ellipsize="end"/>
+    <TextView android:id="@+id/txtLatestMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/dt_text_muted" android:textSize="9sp" android:maxLines="1" android:ellipsize="end"/>
+    <TextView android:id="@+id/txtLatestConcern" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:paddingStart="8dp" android:paddingTop="3dp" android:paddingEnd="8dp" android:paddingBottom="3dp" android:background="@drawable/bg_chip_primary" android:textColor="@color/dt_primary_dark" android:textStyle="bold" android:textSize="9sp" android:maxLines="1"/>
+</LinearLayout>

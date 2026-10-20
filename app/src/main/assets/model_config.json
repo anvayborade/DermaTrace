@@ -1,0 +1,43 @@
+{
+  "quality": {
+    "model": "quality_fp16.tflite",
+    "input_size": 160,
+    "confidence_threshold": 0.90,
+    "classes": [
+      "GOOD",
+      "BLUR",
+      "DARK",
+      "OVEREXPOSED"
+    ]
+  },
+  "segmentation": {
+    "model": "segmenter_fp16.tflite",
+    "input_size": 256,
+    "mask_threshold": 0.55
+  },
+  "triage": {
+    "model": "triage_binary_fp32.tflite",
+    "input_size": 224,
+    "higher_concern_index": 1,
+    "temperature": 1.1641762811246221,
+    "threshold": 0.3049999999999999
+  },
+  "classifier": {
+    "model": "classifier_fp16.tflite",
+    "input_size": 224,
+    "temperature": 1.3735359672178815,
+    "classes": [
+      "AKIEC",
+      "BCC",
+      "BEN_OTH",
+      "BKL",
+      "DF",
+      "INF",
+      "MAL_OTH",
+      "MEL",
+      "NV",
+      "SCCKA",
+      "VASC"
+    ]
+  }
+}

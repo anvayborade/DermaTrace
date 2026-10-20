@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_view" android:title="View assessment" />
+    <item android:id="@+id/action_edit_notes" android:icon="@drawable/ic_edit" android:title="Edit note" />
+    <item android:id="@+id/action_compare" android:icon="@drawable/ic_compare" android:title="Compare with previous" />
+    <item android:id="@+id/action_reports" android:icon="@drawable/ic_description" android:title="Open report viewer" />
+    <item android:id="@+id/action_export_pdf" android:title="Save PDF" />
+    <item android:id="@+id/action_export_txt" android:title="Save TXT" />
+    <item android:id="@+id/action_share" android:title="Share PDF" />
+    <item android:id="@+id/action_delete" android:icon="@drawable/ic_delete" android:title="Delete" />
+</menu>

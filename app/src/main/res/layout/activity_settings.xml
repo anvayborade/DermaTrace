@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_app_gradient">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dt_surface"
+        app:title="Settings"
+        app:titleTextAppearance="@style/TextAppearance.DermaTrace.ToolbarTitle"
+        app:titleTextColor="@color/dt_text" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="28dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_result_panel"
+                android:padding="18dp">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your account" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="19sp" />
+                <TextView android:id="@+id/txtSettingsAccountName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="DermaTrace user" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="17sp" />
+                <TextView android:id="@+id/txtSettingsAccountEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="email@example.com" android:textColor="@color/dt_text_muted" android:textSize="13sp" />
+                <TextView android:id="@+id/txtSettingsAccountProvider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Firebase account" android:textColor="@color/dt_text_muted" android:textSize="12sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="Authentication protects app access. In this version, SQLite lesion records remain local to this device; cloud sync comes next." android:textColor="@color/dt_text_muted" android:textSize="11sp" android:lineSpacingExtra="2dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnSettingsSignOut" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="12dp" android:text="Sign out" android:textAllCaps="false" android:textColor="@color/dt_text" app:icon="@drawable/ic_logout" app:iconTint="@color/dt_text" app:backgroundTint="@color/dt_surface_soft" app:strokeColor="@color/dt_border" app:cornerRadius="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_glass_card">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clinician contact"
+                    android:textColor="@color/dt_text"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/edtClinicianName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Clinician name"
+                    android:textColor="@color/dt_text"
+                    android:textColorHint="@color/dt_text_muted" />
+
+                <EditText
+                    android:id="@+id/edtClinicianPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:textColor="@color/dt_text"
+                    android:textColorHint="@color/dt_text_muted" />
+
+                <EditText
+                    android:id="@+id/edtClinicianEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/dt_text"
+                    android:textColorHint="@color/dt_text_muted" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_result_panel"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Local AI overview"
+                    android:textColor="@color/dt_text"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Uses Ollama on your laptop to explain the already-computed DermaTrace result. No lesion image is sent to the LLM."
+                    android:textColor="@color/dt_text_muted"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchOllamaEnabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Generate AI overview automatically"
+                    android:textColor="@color/dt_text" />
+
+                <EditText
+                    android:id="@+id/edtOllamaUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="Ollama URL"
+                    android:singleLine="true"
+                    android:inputType="textUri"
+                    android:textColor="@color/dt_text"
+                    android:textColorHint="@color/dt_text_muted" />
+
+                <EditText
+                    android:id="@+id/edtOllamaModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Model, e.g. llama3.2"
+                    android:singleLine="true"
+                    android:textColor="@color/dt_text"
+                    android:textColorHint="@color/dt_text_muted" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTestOllama"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Test Ollama connection"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dt_text"
+                    app:backgroundTint="@color/dt_surface_soft"
+                    app:strokeColor="@color/dt_border"
+                    app:cornerRadius="17dp" />
+
+                <TextView
+                    android:id="@+id/txtOllamaStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="For USB testing, run: adb reverse tcp:11434 tcp:11434"
+                    android:textColor="@color/dt_text_muted"
+                    android:textSize="12sp"
+                    android:lineSpacingExtra="3dp"
+                    android:textIsSelectable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_glass_card">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Follow-up"
+                    android:textColor="@color/dt_text"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/edtFollowUpDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Default reminder days"
+                    android:inputType="number"
+                    android:textColor="@color/dt_text"
+                    android:textColorHint="@color/dt_text_muted" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTestReminder"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Test notification in ~1 minute"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dt_text"
+                    app:backgroundTint="@color/dt_surface_soft"
+                    app:strokeColor="@color/dt_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_glass_card">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developer / demo"
+                    android:textColor="@color/dt_text"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchDebugImport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Show file-import shortcut on camera screen"
+                    android:textColor="@color/dt_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="New Analysis always supports file import. This switch only controls the extra shortcut shown on the Camera screen."
+                    android:textColor="@color/dt_text_muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="18dp"
+                android:text="Save settings"
+                android:textAllCaps="false"
+                android:textColor="@color/dt_white"
+                app:backgroundTint="@color/dt_primary"
+                app:cornerRadius="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

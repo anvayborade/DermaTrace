@@ -1,0 +1,16 @@
+<resources>
+    <style name="Theme.DermaTrace" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/dt_primary</item>
+        <item name="colorPrimaryVariant">@color/dt_primary_dark</item>
+        <item name="colorSecondary">@color/dt_accent_b</item>
+        <item name="colorSurface">@color/dt_surface</item>
+        <item name="colorOnSurface">@color/dt_text</item>
+        <item name="colorOnPrimary">@color/dt_white</item>
+        <item name="android:colorAccent">@color/dt_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/dt_background</item>
+        <item name="android:navigationBarColor">@color/dt_background</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

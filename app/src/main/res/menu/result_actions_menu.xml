@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/result_edit_note" android:title="Edit note" />
+    <item android:id="@+id/result_compare" android:title="Compare with previous" />
+    <item android:id="@+id/result_reports" android:title="Open report viewer" />
+    <item android:id="@+id/result_export_pdf" android:title="Save PDF" />
+    <item android:id="@+id/result_export_txt" android:title="Save TXT" />
+    <item android:id="@+id/result_share" android:title="Share PDF report" />
+    <item android:id="@+id/result_reminder" android:title="Schedule follow-up reminder" />
+    <item android:id="@+id/result_nearby" android:title="Find nearby care" />
+</menu>

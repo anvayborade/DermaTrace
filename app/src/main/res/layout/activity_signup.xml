@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/signupRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_app_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_dermatrace_mark" android:contentDescription="DermaTrace" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Create your account" style="@style/TextAppearance.DermaTrace.Headline" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Use your account to access DermaTrace and personalize the dashboard." style="@style/TextAppearance.DermaTrace.Secondary" />
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:hint="Your name" app:boxBackgroundMode="outline" app:boxBackgroundColor="@color/dt_surface" app:boxStrokeColor="@color/dt_primary">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/edtSignupName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName" android:singleLine="true" android:textColor="@color/dt_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Email address" app:boxBackgroundMode="outline" app:boxBackgroundColor="@color/dt_surface" app:boxStrokeColor="@color/dt_primary">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/edtSignupEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:singleLine="true" android:textColor="@color/dt_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Password (minimum 6 characters)" app:boxBackgroundMode="outline" app:boxBackgroundColor="@color/dt_surface" app:boxStrokeColor="@color/dt_primary" app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/edtSignupPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:singleLine="true" android:textColor="@color/dt_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Confirm password" app:boxBackgroundMode="outline" app:boxBackgroundColor="@color/dt_surface" app:boxStrokeColor="@color/dt_primary" app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/edtSignupConfirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:singleLine="true" android:textColor="@color/dt_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCreateAccount" style="@style/Widget.DermaTrace.Button.Primary" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="20dp" android:text="Create account" />
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@+id/progressSignup" android:layout_width="32dp" android:layout_height="32dp" android:layout_gravity="center" android:layout_marginTop="16dp" android:visibility="gone" app:indicatorColor="@color/dt_primary" app:trackColor="@color/dt_primary_container" />
+
+        <TextView android:id="@+id/txtBackToLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="20dp" android:padding="8dp" android:text="Already have an account?  Sign in" android:textColor="@color/dt_primary" android:textStyle="bold" android:textSize="13sp" android:clickable="true" android:focusable="true" />
+    </LinearLayout>
+</ScrollView>

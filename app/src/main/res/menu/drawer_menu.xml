@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_dashboard" android:icon="@drawable/ic_dashboard" android:title="@string/nav_dashboard" />
+        <item android:id="@+id/nav_new_analysis" android:icon="@drawable/ic_camera_alt" android:title="@string/nav_new_analysis" />
+        <item android:id="@+id/nav_patients" android:icon="@drawable/ic_people" android:title="@string/nav_patients" />
+        <item android:id="@+id/nav_history" android:icon="@drawable/ic_history" android:title="@string/nav_history" />
+        <item android:id="@+id/nav_reports" android:icon="@drawable/ic_description" android:title="@string/nav_reports" />
+        <item android:id="@+id/nav_compare" android:icon="@drawable/ic_compare" android:title="@string/nav_compare" />
+        <item android:id="@+id/nav_followups" android:icon="@drawable/ic_notifications" android:title="@string/nav_followups" />
+        <item android:id="@+id/nav_nearby" android:icon="@drawable/ic_location" android:title="@string/nav_nearby" />
+        <item android:id="@+id/nav_settings" android:icon="@drawable/ic_settings" android:title="@string/nav_settings" />
+        <item android:id="@+id/nav_about" android:icon="@drawable/ic_info" android:title="@string/nav_about" />
+    </group>
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/nav_logout" android:icon="@drawable/ic_logout" android:title="Sign out" />
+    </group>
+</menu>

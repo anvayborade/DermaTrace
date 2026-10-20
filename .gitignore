@@ -1,0 +1,42 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Generated Android files
+**/build/
+.gradle/
+.idea/
+#*.iml
+#local.properties
+captures/
+.cxx/
+.externalNativeBuild/
+
+# Firebase local configuration
+app/google-services.json
+
+# Signing keys and secrets
+*.jks
+*.keystore
+*.p12
+.env
+.env.*
+*service-account*.json
+
+# Local databases, logs and private records
+*.db
+*.sqlite
+*.sqlite3
+*.log

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="236dp" android:orientation="vertical" android:gravity="bottom" android:padding="20dp" android:background="@color/dt_surface">
+
+    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_dermatrace_mark" android:contentDescription="Account"/>
+    <TextView android:id="@+id/txtNavBrand" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="DermaTrace" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="22sp"/><TextView android:id="@+id/txtNavUserName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="DermaTrace user" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="17sp" android:maxLines="1" android:ellipsize="end"/>
+    <TextView android:id="@+id/txtNavUserEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Signed in" android:textColor="@color/dt_text_muted" android:textSize="12sp" android:maxLines="1" android:ellipsize="end"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="DermaTrace • clinical decision-support prototype" android:textColor="@color/dt_text_muted" android:textSize="10sp"/>
+</LinearLayout>

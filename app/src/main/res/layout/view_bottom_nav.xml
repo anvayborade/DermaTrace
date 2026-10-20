@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:minHeight="64dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/dt_surface"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <LinearLayout android:id="@+id/navBottomHome" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true">
+        <ImageView android:id="@+id/navBottomHomeIcon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_dashboard" app:tint="@color/dt_primary" android:contentDescription="Home"/>
+        <TextView android:id="@+id/navBottomHomeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Home" android:textColor="@color/dt_primary" android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/navBottomPatients" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true">
+        <ImageView android:id="@+id/navBottomPatientsIcon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_people" app:tint="@color/dt_text_muted" android:contentDescription="Patients"/>
+        <TextView android:id="@+id/navBottomPatientsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Patients" android:textColor="@color/dt_text_muted" android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/navBottomAnalyze" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true">
+        <ImageView android:id="@+id/navBottomAnalyzeIcon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_camera_alt" app:tint="@color/dt_text_muted" android:contentDescription="Analyze"/>
+        <TextView android:id="@+id/navBottomAnalyzeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Analyze" android:textColor="@color/dt_text_muted" android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/navBottomReports" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true">
+        <ImageView android:id="@+id/navBottomReportsIcon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_description" app:tint="@color/dt_text_muted" android:contentDescription="Reports"/>
+        <TextView android:id="@+id/navBottomReportsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Reports" android:textColor="@color/dt_text_muted" android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/navBottomMore" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true">
+        <ImageView android:id="@+id/navBottomMoreIcon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_more_vert" app:tint="@color/dt_text_muted" android:contentDescription="More"/>
+        <TextView android:id="@+id/navBottomMoreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="More" android:textColor="@color/dt_text_muted" android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

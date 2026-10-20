@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/followup_open" android:title="Open lesion" />
+    <item android:id="@+id/followup_reschedule" android:title="Reschedule" />
+    <item android:id="@+id/followup_cancel" android:icon="@drawable/ic_delete" android:title="Cancel reminder" />
+</menu>

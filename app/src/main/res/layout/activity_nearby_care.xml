@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/bg_app_gradient">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbarNearbyCare"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/dt_surface"
+        app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel" app:title="Nearby care" app:titleTextAppearance="@style/TextAppearance.DermaTrace.ToolbarTitle"
+        app:titleTextColor="@color/dt_text"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Escalate from AI to real care" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="27sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Open nearby dermatology services in your maps app, or save a clinician contact for one-tap dial/email actions." android:textColor="@color/dt_text_muted" android:textSize="14sp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnFindDermatologist" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="20dp" android:text="Find dermatologists nearby" android:textAllCaps="false" android:textColor="@color/dt_white" app:backgroundTint="@color/dt_primary" app:cornerRadius="18dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnFindSkinClinic" style="@style/Widget.MaterialComponents.Button.OutlinedButton" app:backgroundTint="@color/dt_surface_soft" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:text="Find skin cancer clinics" android:textAllCaps="false" android:textColor="@color/dt_text" app:strokeColor="@color/dt_border" app:cornerRadius="18dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:orientation="vertical" android:background="@drawable/bg_glass_card">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Saved clinician" android:textColor="@color/dt_text" android:textStyle="bold" android:textSize="18sp"/>
+                <TextView android:id="@+id/txtSavedClinician" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/dt_text_muted" android:textSize="14sp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCallClinician" style="@style/Widget.MaterialComponents.Button.OutlinedButton" app:backgroundTint="@color/dt_surface_soft" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="14dp" android:text="Call saved clinician" android:textAllCaps="false" android:textColor="@color/dt_text" app:strokeColor="@color/dt_border"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnEmailClinician" style="@style/Widget.MaterialComponents.Button.OutlinedButton" app:backgroundTint="@color/dt_surface_soft" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Email saved clinician" android:textAllCaps="false" android:textColor="@color/dt_text" app:strokeColor="@color/dt_border"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnChooseContact" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="4dp" android:text="Choose from Contacts" android:textAllCaps="false" android:textColor="@color/dt_text_muted"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnCareSettings" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="match_parent" android:layout_height="48dp" android:text="Edit clinician details in Settings" android:textAllCaps="false" android:textColor="@color/dt_text_muted"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

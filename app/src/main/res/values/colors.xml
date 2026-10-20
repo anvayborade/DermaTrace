@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dt_background">#F8FAFC</color>
+    <color name="dt_background_2">#FFFFFF</color>
+    <color name="dt_surface">#FFFFFF</color>
+    <color name="dt_surface_soft">#F3F6F9</color>
+    <color name="dt_surface_tint">#EAF7F6</color>
+    <color name="dt_border">#DCE4EA</color>
+    <color name="dt_divider">#E7EDF1</color>
+    <color name="dt_text">#10243E</color>
+    <color name="dt_text_muted">#6E7F91</color>
+    <color name="dt_primary">#118C8E</color>
+    <color name="dt_primary_dark">#0A7174</color>
+    <color name="dt_primary_container">#E2F4F3</color>
+    <color name="dt_accent_a">#118C8E</color>
+    <color name="dt_accent_b">#4C70C8</color>
+    <color name="dt_accent_c">#8B6BA8</color>
+    <color name="dt_accent_d">#118C8E</color>
+    <color name="dt_success">#2C8B67</color>
+    <color name="dt_success_container">#E3F4EC</color>
+    <color name="dt_warning">#B47A18</color>
+    <color name="dt_warning_container">#FFF3DC</color>
+    <color name="dt_danger">#C74F67</color>
+    <color name="dt_danger_container">#FCE8EC</color>
+    <color name="dt_indigo_container">#EEF2FD</color>
+    <color name="dt_plum_container">#F4EEFA</color>
+    <color name="dt_white">#FFFFFF</color>
+    <color name="dt_scrim">#99000000</color>
+</resources>
